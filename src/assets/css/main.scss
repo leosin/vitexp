@@ -1,0 +1,59 @@
+/* ---------------------------
+基础样式自定义
+--------------------------- */
+html,
+body {
+  @apply h-screen;
+}
+
+body {
+  @apply text-14px text-blue-gray-500 fill-black;
+}
+
+img {
+  @apply w-full;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply text-blue-gray-700;
+}
+
+/* ---------------------------
+自定义局部样式
+--------------------------- */
+// 扩张a链接区域
+.slink::after {
+  content: '';
+  @apply absolute inset-0 z-30;
+}
+// 段落文字底部边距
+.para p {
+  @apply mb-3;
+}
+// 虚线条_横向
+.line-x-dashed::after {
+  content: '';
+  @apply block w-full h-px border-b border-dashed;
+}
+// 虚线条_横向
+.line-x-solid::after {
+  content: '';
+  @apply block w-full h-px border-b border-solid;
+}
+.ellipsis {
+  width: 320px;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -webkit-text-overflow: ellipsis;
+  -moz-text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+// 列表缩略图
+
+// Forms
